@@ -14,7 +14,7 @@ python -m scheduler serve --gemini
 
 Open http://127.0.0.1:8000. To use the offline rules instead, omit `--gemini`. Gemini requires internet access and available API quota.
 
-Ask for general care next Monday with Dr Rao, preferably in the afternoon. Use the fictional patient **Demo Patient, DOB 1990-04-12**, choose a time, and confirm the booking. All times are IST.
+Ask for general care next Monday with a preferred time of day. Use the synthetic patient data configured by the app, choose a displayed slot, and confirm the booking. All times are IST.
 
 ## Evaluate and improve
 
