@@ -31,4 +31,4 @@ The recorded run improved training **28/32 → 32/32** and validation **10/12 �
 
 [Demo guide](docs/DEMO.md) · [Design note](DESIGN.md) · [Test results](docs/REVIEW.md) · [Evaluation report](artifacts/gemini/browser-run/report.md)
 
-This is a local demo with fictional clinic data. Bookings persist across restarts; chat sessions do not. `.env`, runtime databases, logs, and private working files are excluded from the submission ZIP.
+This is a local demo with fictional clinic data. 
