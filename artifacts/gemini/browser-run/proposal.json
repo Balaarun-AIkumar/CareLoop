@@ -2,7 +2,7 @@
   "schema_version": 2,
   "source_policy": "5c89fe83b4fb",
   "generator": "Gemini failure analysis",
-  "analysis": "Two failures (soft_afternoon, soft_any_doctor, indirect_preference) show PREFERENCE_MISSED because honor_soft_preferences is false, meaning soft preferences like afternoon visits are not being used to rank available appointment slots. Setting honor_soft_preferences to true fixes this. Another failure (transient_availability) shows a READ_TRANSIENT_UNRECOVERED failure because read_retries is 0 and transient read errors on search_slots fail immediately; setting read_retries to 1 or 2 allows the system to retry transient read failures.",
+  "analysis": "Three preference failures (soft_afternoon, soft_any_doctor, indirect_preference) show PREFERENCE_MISSED because honor_soft_preferences is false, meaning soft preferences like afternoon visits are not being used to rank available appointment slots. Setting honor_soft_preferences to true fixes this. Another failure (transient_availability) shows a READ_TRANSIENT_UNRECOVERED failure because read_retries is 0 and transient read errors on search_slots fail immediately; setting read_retries to 1 or 2 allows the system to retry transient read failures.",
   "patches": [
     {
       "field": "honor_soft_preferences",
